@@ -19,7 +19,7 @@ client.on('message', message => {
 	} 
 	else if (message.content === 'nombre aleatorio')
 	{
-		message.reply('pene');
+		message.reply('pene', { tts: true });
 	}
 });
 
