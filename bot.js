@@ -58,5 +58,10 @@ client.on('message', message => {
 	}
 });
 
+bot.on('disconnect', function(msg, code) {
+    if (code === 0) return console.error(msg);
+    bot.connect();
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
