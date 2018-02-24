@@ -19,7 +19,8 @@ client.on('message', message => {
 	} 
 	else if (message.content === 'nombre aleatorio')
 	{
-		message.reply('pene', { tts: true });
+		//message.reply('pene', { tts: true });
+		message.channel.sendMessage(message.author.username + ' lololo', { code: true });
 	}
 });
 
